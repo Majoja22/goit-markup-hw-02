@@ -95,8 +95,8 @@ body {
   letter-spacing: 0.32px;
 }
 
-.header-link: hover,
-.header-link: focus {
+.header-link :hover,
+.header-link :focus {
   color: var(--primary-background-color);
 }
 
