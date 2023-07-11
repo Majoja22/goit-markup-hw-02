@@ -32,25 +32,20 @@ body {
 
 .bottom-text {
   color: var(--secondary-background-color);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
 }
 
-.button {
-  color: var(--primary-logo-color);
+.filter-item {
+  color: var(--primary-button-color);
+  background-color: var(--secondary-bottom-color);
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
-}
-
-.header {
-  background-color: var(--secondary-top-color);
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .web {
@@ -86,6 +81,13 @@ body {
   text-transform: uppercase;
 }
 
+.button {
+  background-color: var(--primary-button-color);
+  color: var(--primary-background-color);
+  border-color: transparent;
+  font-family: inherit;
+}
+
 .header-link {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -95,19 +97,34 @@ body {
   letter-spacing: 0.32px;
 }
 
-.header-link :hover,
-.header-link :focus {
-  color: var(--primary-background-color);
+.header-link:hover,
+.header-link:focus {
+  color: var(--primary-logo-color);
 }
 
-.about-item-all {
-  background-color: var(--secondary-button-color);
-  color: var(--primary-background-color);
+.button.filter-item:hover,
+.button.filter-item:focus {
+  background-color: var(--primary-button-color);
+}
+
+.header-link.current {
+  color: var(--primary-logo-color);
+}
+
+.filter-item {
+  color: var(--primary-button-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
+}
+
+.filter-item:hover,
+.filter-item:focus,
+.filter-item.active {
+  background-color: var(--secondary-button-color);
+  color: var(--primary-background-color);
 }
 
 .main {
